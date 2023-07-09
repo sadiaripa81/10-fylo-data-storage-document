@@ -1,0 +1,205 @@
+body {
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container {
+    height: 80%;
+    width: 70%;
+    gap: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+.first_div {
+    height: 160px;
+    width: 280px;
+    padding: 30px;
+    border-radius: 15px 80px 15px 15px;
+    background-color: hsl(228, 56%, 26%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.fylo_logo {
+    height: 32%;
+    width: 50%;
+}
+.logos {
+    display: flex;
+    gap: 20px;
+}
+.document_logo {
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(229, 57%, 11%);
+}
+.folder_logo {
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(229, 57%, 11%);
+}
+.upload_logo {
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(229, 57%, 11%);
+}
+.second_div {
+    height: 120px;
+    width: 400px;
+    padding: 20px 30px 30px 30px;
+    border-radius: 15px;
+    background-color: hsl(228, 56%, 26%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(243, 100%, 93%);
+    position: relative;
+}
+.p {
+    margin-bottom: 10px;
+}
+.blue_div {
+    width: 100%;
+    padding: 3px;
+    margin: 0;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.pink_div {
+    height: 15px;
+    width: 75%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+}
+.gray_ball {
+    height: 12px;
+    width: 12px;
+    margin: 0 2px 0 0 ;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 50%;
+}
+.gb {
+    margin: 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span {
+    font-weight: 700;
+}
+.floating_div {
+    height: 60px;
+    width: 140px;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    right: 8%;
+    bottom: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.gray_font {
+    font-size: 12px;
+    color: hsl(229, 7%, 55%);
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 36px 43px 10px;
+    border-top-color: transparent;
+    border-right-color: #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 64%;
+  } 
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 100%;
+        width: 100vw;
+        flex-direction: column;
+        background-image: url(./images/bg-mobile.png);
+        background-position: center;
+        background-color: transparent
+    }
+    .first_div {
+        height: 200px;
+        width: 350px;
+        gap: 30px;
+        border-radius: 15px 110px 15px 15px;
+    }
+    .document_logo {
+        height: 50px;
+        width: 50px;
+    }
+    .folder_logo {
+        height: 50px;
+        width: 50px;
+    }
+    .upload_logo {
+        height: 50px;
+        width: 50px;
+    }
+    .second_div {
+        height: 158px;
+        width: 350px;
+        font-size: 14px;   
+    }
+    .p {
+        align-self: center;
+    }
+    .floating_div {
+        height: 75px;
+        width: 193px;
+        right: 22%;
+        bottom: -29%;
+        font-size: 38px;
+    }
+    .gray_font {
+        font-size: 14px;
+    }
+    .triangle {
+        border-width: 0;
+    }
+  }
